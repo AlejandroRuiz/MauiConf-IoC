@@ -15,6 +15,7 @@ public static class MauiProgram
             })
             .RegisterServices()
             .RegisterPages()
+            //.RegisterShellPages()
             .EnableLogging()
             .AddAppConfiguration();
 

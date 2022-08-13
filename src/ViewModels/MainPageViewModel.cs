@@ -55,6 +55,7 @@ public class MainPageViewModel : ObservableObject
                     logger.SendEvent("Button Tapped");
 
                 _messageWriter.Write(ClickedCount);
+
                 _viewModelLogger.LogInformation(ClickedCount);
             }
         }
@@ -72,5 +73,7 @@ public class MainPageViewModel : ObservableObject
     {
         var page = _serviceProvider.GetRequiredService<NewDemoPage>();
         App.Current.MainPage.Navigation.PushAsync(page);
+
+        //Shell.Current.GoToAsync(nameof(NewDemoPage));
     }
 }

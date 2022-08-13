@@ -12,6 +12,7 @@
             Command="{Binding ChangeValuesCommand}"/>
 
         <Label
+            FontSize="20"
             Text="{Binding Message}"
             VerticalOptions="Center"
             HorizontalOptions="Center" />

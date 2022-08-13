@@ -5,6 +5,7 @@ using DIDemo.ViewModels;
 using DIDemo.Views;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Hosting;
 
 namespace DIDemo.Extensions;
 
@@ -26,6 +27,16 @@ public static class MauiAppBuilderExtensions
     {
         return mauiAppBuilder
             .AddPage<MainPage, MainPageViewModel>()
+            .AddPage<NewDemoPage, NewDemoPageViewModel>()
+            .AddPage<AppShell>();
+    }
+
+    public static MauiAppBuilder RegisterShellPages(this MauiAppBuilder mauiAppBuilder)
+    {
+        Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+        Routing.RegisterRoute(nameof(NewDemoPage), typeof(NewDemoPage));
+
+        return mauiAppBuilder.AddPage<MainPage, MainPageViewModel>()
             .AddPage<NewDemoPage, NewDemoPageViewModel>()
             .AddPage<AppShell>();
     }
