@@ -29,4 +29,3 @@ public class ConfigurationProvider : IConfigurationProvider
         return Preferences.ContainsKey(key);
     }
 }
-

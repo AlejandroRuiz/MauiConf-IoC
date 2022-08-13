@@ -30,11 +30,5 @@ public class ConfigurationSource : IConfigurationSource
                 }
             }
         }
-
-        if (!Preferences.ContainsKey("PreferenceDemoInt"))
-        {
-            Preferences.Set("PreferenceDemoInt", -1);
-        }
     }
 }
-

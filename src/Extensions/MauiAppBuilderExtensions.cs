@@ -1,13 +1,10 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using CommunityToolkit.Mvvm.ComponentModel;
-using DIDemo.Configuration;
 using DIDemo.Services;
 using DIDemo.ViewModels;
 using DIDemo.Views;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Primitives;
 
 namespace DIDemo.Extensions;
 

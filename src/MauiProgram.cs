@@ -1,6 +1,4 @@
 ﻿using DIDemo.Extensions;
-using DIDemo.Helpers;
-using DIDemo.Services;
 
 namespace DIDemo;
 

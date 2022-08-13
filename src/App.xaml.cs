@@ -2,7 +2,7 @@
 
 namespace DIDemo;
 
-public partial class App : Application
+public partial class App
 {
     /*public App(AppShell mainPage)
     {

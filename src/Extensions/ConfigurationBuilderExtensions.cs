@@ -1,5 +1,4 @@
-﻿using System;
-using DIDemo.Configuration;
+﻿using DIDemo.Configuration;
 using Microsoft.Extensions.Configuration;
 
 namespace DIDemo.Extensions;
@@ -13,4 +12,3 @@ public static class ConfigurationBuilderExtensions
         return builder;
     }
 }
-
